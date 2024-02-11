@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 15, 20);
+    /* Ajusta a altura do body */
+    min-height: 100vh;
+}
+
+.logo p {
+    font-weight: 1000;
+    font-size: 25px;
+    color: #fff;
+    cursor: default;
+    transition: 1s;
+}
+
+.logo p:hover {
+    transition: 0.5s;
+    color: #cce201;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    color: #202020;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+}
+
+.nav-itens>li>a {
+    padding-left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.buttons .login {
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    color: #202020;
+    background-color: #b1b1b1;
+    transition: 0.5s;
+}
+
+.buttons .login:hover {
+    cursor: pointer;
+    background-color: rgb(136, 136, 136);
+    color: #fff;
+    transition: 0.5s;
+}
+
+.buttons .cadastro {
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #202020;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.buttons .cadastro:hover {
+    cursor: pointer;
+    background-color: rgb(204, 226, 0);
+    color: #000000;
+    transition: 0.5s;
+}
+
+#planos {
+    margin-top: 80px;
+}
+
+#planos .titulo h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-weight: 1000;
+    font-size: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Centraliza os elementos ao centro */
+    justify-content: center;
+}
+
+.planos {
+    background-color: rgb(33, 38, 45);
+    padding: 20px 15px;
+    border-radius: 5px;
+    text-align: left;
+    /* espaçamento EXTERNO de elementos */
+    margin-right: 15px;
+    /*aumenta o distanciamento entre os quadrados de planos */
+    width: 370px;
+    height: 435px;
+    /* aumenta o comprimento das formas */
+}
+
+.planos .planos ul {
+    padding: 20px 15px;
+}
+
+.planos ul li {
+    margin-bottom: 1rem;
+    color: #fff;
+    margin-left: 1rem;
+    font-weight: 900;
+}
+
+.planos ul li::marker {
+    color: rgb(200, 222, 50);
+    width: 20px;
+    font-size: 1.2rem;
+}
+
+.planos h2 {
+    color: #fff;
+}
+
+.planos h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(200, 222, 50);
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.bt-planos {
+    color: rgb(0, 0, 0);
+    padding: 20px 4rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(204, 226, 1);
+    margin-top: 5rem;
+    margin-left: 3rem;
+    font-size: 20px;
+    font-weight: 900;
+    transition: 0.5s;
+}
+
+.bt-planos:hover {
+    color: rgb(204, 226, 1);
+    background-color: rgb(12, 15, 20);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.top-card {
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.final {
+    text-align: center;
+    margin-top: 12rem;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    font-size: 0.7rem;
+    margin: auto auto 2rem;
+}
+
+.login-panel {
+    background-color: #21262d;
+    padding: 20px 15px;
+    width: 25rem;
+    height: 20rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    border: none;
+    justify-content: center;
+    margin: 10rem auto;
+    /* Organiza a posi na página */
+}
+
+
+.login-panel .login-title {
+    color: #fff;
+    font-weight: 800;
+    transition: 1s;
+}
+
+.login-panel .login-title:hover {
+    color: #cce201;
+    font-weight: 800;
+    cursor: default;
+}
+
+
+.login-panel .login-title::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 1px;
+    background-color: #cce201;
+    margin-top: 2px;
+    border-radius: 5px;
+    margin-left: 7.9rem;
+    transition: 1s;
+}
+
+.login-form {
+    margin-top: 1.2rem;
+}
+
+.login-form .user-login {
+    text-align: justify;
+    padding-left: 6.5rem;
+    display: block;
+    color: #fff;
+    font-weight: 550;
+    margin-bottom: 0.5rem;
+}
+
+.login-form .login-btn {
+    border: none;
+    border-radius: 2px;
+    width: 10rem;
+    height: 1.3rem;
+    margin: auto auto 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: 1.2s;
+    box-shadow: 1px 1px 10px rgb(56, 56, 56);
+    outline: 0;
+}
+
+.login-form .login-btn:focus::placeholder {
+    color: transparent;
+}
+
+.submitlogin {
+    font-weight: 800;
+    display: block;
+    margin: auto;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 2px;
+    margin-top: 2rem;
+    background-color: #fff;
+    color: #000000;
+    transition: 1s;
+}
+
+.submitlogin:hover {
+    transition: 1s;
+    background-color: #cce201;
+    width: 8rem;
+}
+
+.form-cad .formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #21262d;
+    width: 20rem;
+    height: 30rem;
+    align-items: center;
+    margin: auto;
+    margin-top: 10rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.form-cad .formulario .titulo-nome {
+    margin-top: 2rem;
+    margin-bottom: 5px;
+    margin-left: 8rem;
+    width: 100%;
+    text-align: justify;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+.form-cad .formulario .input-nome {
+    width: 12rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.form-cad .formulario .input-nome:focus {
+    outline: none;
+}
+
+.form-cad .formulario .input-nome::placeholder {
+    text-align: justify;
+    position: relative;
+    left: 8px;
+    top: 2px;
+}
+
+.form-cad .formulario .input-nome:focus::placeholder {
+    color: transparent;
+}
+
+.form-cad .formulario .sendcad .enviar-cad {
+    margin-top: 2.9rem;
+    width: 10rem;
+    height: 2.5rem;
+    transition: 1.9s;
+    border: none;
+    border-radius: 3px;
+    transition: 1s;
+    background-color: #cce201;
+    font-weight: 1000;
+    font-size: 1.2rem;
+}
+
+.form-cad .formulario .sendcad .enviar-cad:hover {
+    width: 12rem;
+    background-color: #21262d;
+    color: #cce201;
+    cursor: pointer;
+    border: 1px #cce201;
+    border-style: solid;
+}
+
+.form-cad .formulario .titulo-cadas {
+    color: #fff;
+    padding-top: 15px;
+    font-size: 25px;
+    display: flex;
+}
+
+.w3selo .w3css{
+    margin: 20px auto;
+}
